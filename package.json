@@ -1,0 +1,23 @@
+{
+  "name": "prisma-ecommerce",
+  "version": "0.0.0",
+  "description": "Example repo showing how to use Prisma in a node application",
+  "main": "server.ts",
+  "scripts": {
+    "dev": "ts-node-dev --exit-child server.ts"
+  },
+  "keywords": [
+    "prisma"
+  ],
+  "author": "Ryan Chenkie <ryan@elevatedigital.io>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/express": "^4.17.12",
+    "prisma": "^2.25.0",
+    "ts-node-dev": "^1.1.6"
+  },
+  "dependencies": {
+    "@prisma/client": "^2.25.0",
+    "express": "^4.17.1"
+  }
+}
