@@ -1,23 +1,33 @@
 {
   "name": "prisma-ecommerce",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Example repo showing how to use Prisma in a node application",
-  "main": "server.ts",
+  "main": "./src/server.ts",
   "scripts": {
-    "dev": "ts-node-dev --exit-child server.ts"
+    "dev": "nodemon --config nodemon.json ./src/server.ts",
+    "dev:debug": "nodemon --config nodemon.json --inspect-brk ./src/server.ts",
+    "start": "ts-node ./src/index.ts",
+    "build": "tsc -p ./"
   },
   "keywords": [
     "prisma"
   ],
-  "author": "Ryan Chenkie <ryan@elevatedigital.io>",
+  "author": "Andrew Ross",
   "license": "MIT",
   "devDependencies": {
-    "@types/express": "^4.17.12",
-    "prisma": "^2.25.0",
-    "ts-node-dev": "^1.1.6"
+    "@types/express": "^4.17.13",
+    "@types/node": "^16.10.1",
+    "cross-env": "^7.0.3",
+    "dotenv": "^10.0.0",
+    "dotenv-cli": "^4.0.0",
+    "nodemon": "^2.0.13",
+    "prisma": "^3.1.1",
+    "ts-node": "^10.2.1",
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.4.3"
   },
   "dependencies": {
-    "@prisma/client": "^2.25.0",
+    "@prisma/client": "^3.1.1",
     "express": "^4.17.1"
   }
 }
